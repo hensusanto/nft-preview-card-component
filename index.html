@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(217, 54%, 11%);
+      color: hsl(0, 0%, 100%);
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 18px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .card {
+      max-width: 350px;
+      min-width: 320;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 12px;
+    }
+
+    .img-container {
+      margin: 24px;
+      overflow: hidden;
+      border-radius: 12px;
+      width: 302px;
+      height: 302px;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .description {
+      margin: 0px 24px 24px 24px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-top: 0px;
+      margin-bottom: 8px;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .description--detail {
+      color: hsl(215, 51%, 70%);
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+
+    .eth {
+      display: flex;
+      color: cyan;
+      align-items: center;
+    }
+
+    .eth img {
+      width: 11px;
+      height: 18px;
+      margin-right: 6.48px;
+    }
+
+    .time-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .time-left img {
+      width: 16px;
+      height: 16px;
+      margin-right: 7.7px;
+    }
+
+    .time-left p {
+      margin-left: 0px;
+      color: hsl(215, 51%, 70%);
+    }
+
+    hr {
+      border: 1px solid hsl(215, 32%, 27%);
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+
+    .creator {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .creator img {
+      height: 33px;
+      width: 33px;
+      margin-right: 16px;
+    }
+
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: hsl(178, 100%, 50%);
+      opacity: 0%;
+      top: 0;
+      left: 0;
+      transition: 300ms;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay:hover {
+      opacity: 50%;
+    }
+
+    .overlay img {
+      height: 50px;
+      width: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="img-container">
+      <img src="./images/image-equilibrium.jpg" alt="quilibrium" />
+      <div class="overlay"><img src="./images/icon-view.svg" alt="view" /></div>
+    </div>
+    <div class="description">
+      <h3>Equilibrium #3429</h3>
+      <p class="description--detail">Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="details">
+        <div class="eth"><img src="./images/icon-ethereum.svg" alt="eth icon" />
+          <p>0.041 ETH</p>
+        </div>
+        <div class="time-left"><img src="./images/icon-clock.svg" alt="clock icon" />
+          <p>3 days left</p>
+        </div>
+      </div>
+
+      <hr />
+      <div class="creator"><img src="./images/image-avatar.png" alt="creator avatar" />
+        <p style="color:hsl(215, 51%, 70%); margin-right: 5px">Creation of </p>
+        <p>Jules Wyvern</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hendry Susanto</a>.
+  </div>
+</body>
+
+</html>
